@@ -1,0 +1,30 @@
+body {
+    padding-top: 3%;
+    padding-right: 30%;
+    padding-left: 30%;
+}
+small {
+    font-size: 0.5em;
+    font-weight: normal;
+}
+
+aside {
+	float: left;
+}
+img {
+    border-radius: 50%;
+    width: 50%;
+    position: relative;
+    left: 40px;
+}
+h2 {
+    text-align: center;
+}
+table {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: relative;
+}
+td {
+    padding-right: 15px;
+}
