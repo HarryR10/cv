@@ -1,30 +1,148 @@
 body {
     padding-top: 3%;
-    padding-right: 30%;
-    padding-left: 30%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+section{
+    padding-right: 5%;
+    padding-bottom: 3%;
+}
+h2 {
+    text-align: left;
 }
 small {
     font-size: 0.5em;
     font-weight: normal;
 }
-
-aside {
-	float: left;
-}
 img {
-    border-radius: 50%;
-    width: 50%;
-    position: relative;
-    left: 40px;
-}
-h2 {
-    text-align: center;
+    width: 90%;
 }
 table {
+    position: relative;
+    font-size: 1em;
+    border-spacing: 0px;
+}
+th {
+    border-bottom: 2px solid #38c1da;
+    text-align: left;
+    padding-top: 3%;
+}
+tr{
+    padding-left: 3%;
     padding-top: 3%;
     padding-bottom: 3%;
+}
+tr:hover{
+    background-color: #f1f1f1
+}
+th:hover{
+    background-color: white
+}
+td[colspan]{
+    font-weight:bold;
+    padding-top: 1%;
+}
+#top-info{
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-size: 0.9em;
+}
+
+[data-tooltip] {
     position: relative;
 }
-td {
-    padding-right: 15px;
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 100%;
+    left: 0; top: 90%;
+    background: #38c1da;
+    color: #fff;
+    padding: 0.5em;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.7s;
+    text-align: center;
+    
+} 
+#experience [data-tooltip]::after {
+    top: 0;
+    width: 110px; 
 }
+[data-tooltip]:hover::after {
+    opacity: 1;
+    top: 105%;
+}
+#experience [data-tooltip]:hover::after {
+    top: 160%;
+}
+
+.sidebar{    
+    width: 20%;
+    float: left;
+    position: relative;
+}
+.right-side{    
+    width: 80%;
+    margin-left: 10%;
+    padding-left: 10%;
+}
+.to-hide{
+    width: 130px;
+}
+#skills{
+    width: 35%;
+    float: left;
+    position: relative;
+}
+#skills table {
+    width: 100%;
+}
+#experience table {
+    width: 100%;
+}
+ul {
+    list-style-type: square;
+}
+li {
+    padding-bottom: 1%;
+}
+a:link {
+    color: #38c1da;
+}
+@media (max-width:1440px) {
+    .to-hide{
+        display:none;
+    }
+    .to-hide-work{
+        display:none;
+    }
+    #top-info{
+        font-size: 0.8em;
+    }
+    #skills{
+        float: none;
+        width: 70%;
+    }
+}
+@media (max-width:768px) {
+    .sidebar{
+        float: none;
+        width: 90%;
+        padding-left: 10%;
+    }
+    #top-info{
+        font-size: 1em;
+        width: 100%;
+    }
+    #top-info .to-hide{
+        display:table;
+    }
+    .right-side{ 
+        padding-left: 0%;
+    }
+    img{
+        padding-left: 2%;
+    }
+ }
