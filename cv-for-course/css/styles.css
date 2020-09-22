@@ -102,6 +102,10 @@ td[colspan]{
 #experience table {
     width: 100%;
 }
+#experience td{
+    border-top: 2px solid #38c1da;
+    padding-right: 5%;
+}
 ul {
     list-style-type: square;
 }
